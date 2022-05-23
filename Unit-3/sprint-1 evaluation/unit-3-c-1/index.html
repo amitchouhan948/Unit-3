@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puma Admin</title>
+    <style>
+      *{
+        margin: 0px 0px 0px 0px;
+        background-color: gainsboro;
+      }
+      input
+      {
+        display: block;
+        margin-top: 20px;
+        margin-left:auto;
+        margin-right: auto;
+        border: 0.5px solid grey;
+        padding: 5px 5px 5px 5px;
+        width: 70%;
+      }
+      #navbar{
+        background-color: gray;
+        height: 80px;
+      }
+      #show_products{
+        width: 80px;
+        margin-top: 20px;
+      }
+  
+
+      a{
+        
+        text-decoration: none;
+        padding: 5px 5px 5px 5px;
+      
+      }
+      
+      div>h2{
+        text-align: center;
+      }
+      #products{
+        padding-top: 20px;
+        width: 40%;
+        background-color: aquamarine;
+        height: 300px;
+        margin-left: 30%;
+      }
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+        <button id=“show_products”><a href="inventory.html">Show Products</a></button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+    <form id="products" onsubmit="storedata(event)">
+      <input type="text" id="type" placeholder="Type">
+      <input type="text" id="desc" placeholder="Description">
+      <input type="number" id="price" placeholder="Price">
+      <input type="url" id="image" placeholder="Image">
+      <input type="submit" value="Add Product" id="add_product">
+
+    </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
