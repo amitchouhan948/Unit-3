@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="order" type="text">
+    <button onclick="order()">Order</button>
+</body>
+
+</html>
+<script>
+
+    function status() {
+
+        return true;
+
+    }
+
+    function order() {
+
+        let order = document.getElementById("order").value
+
+        let my_promise = new Promise(function (resolve, reject) {
+
+            let time=Math.random()*10000;
+            console.log(time)
+            let s = status();
+            setTimeout(function () {
+                if (s) {
+
+                    resolve(order)
+
+                }
+                else {
+                    reject("Sorry we can't deliver this item")
+                }
+
+
+            },time)
+
+        })
+
+        my_promise.then(function (res) {
+            console.log(`your ${res} is ready`)
+        })
+    }
+
+
+
+
+</script>

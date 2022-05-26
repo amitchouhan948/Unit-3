@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise : .then , .catch</title>
+</head>
+
+<body>
+
+    <img id="loadingimg" src="https://media3.giphy.com/media/l3nWhI38IWDofyDrW/200w.webp?cid=ecf05e47etysuk5nww12m2yoq9xvfa8e5qcaqkfjjqnyuh7p&rid=200w.webp&ct=g"
+        alt="">
+        
+</body>
+
+</html>
+<script>
+    let image=document.getElementById("loadingimg")
+
+    function checkContent(){
+
+        return false;
+    }
+
+let content_promise= new Promise(function(resolve,reject){
+
+    let content= checkContent();
+
+    setTimeout(function(){
+
+        if(content)
+    {
+        resolve("content is loaded")
+    }
+    else{
+        reject("Failed to load")
+    }
+
+
+    },3000)
+
+    
+
+
+})
+
+console.log("contentpromise:", content_promise);
+
+content_promise.then(function(value){
+    // console.log("value:",value)
+    image.src="https://media0.giphy.com/media/Q81NcsY6YxK7jxnr4v/200w.webp?cid=ecf05e47du9rfrb5n1wqylpwka83yq4zksqob66dao6h9zsx&rid=200w.webp&ct=g"
+
+});
+content_promise.catch(function(err){
+    console.log("err:", err)
+    image.src="https://i.pinimg.com/originals/ef/8b/bd/ef8bbd4554dedcc2fd1fd15ab0ebd7a1.gif"
+})
+
+
+</script>
