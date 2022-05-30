@@ -1,0 +1,14 @@
+#bucket{
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#bucket>div{
+    width: 150px;
+}
+
+#bucket>div>img{
+    width: 150px;
+    height: 150px;
+}
