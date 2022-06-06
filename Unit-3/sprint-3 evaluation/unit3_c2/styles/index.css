@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+}
+#navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#form{
+    width: 40%;
+    background-color: bisque;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+
+}
+h3{
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}
+input{
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}

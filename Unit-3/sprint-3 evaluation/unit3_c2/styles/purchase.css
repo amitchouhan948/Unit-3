@@ -1,0 +1,24 @@
+
+*{
+    margin: 0px;
+}
+
+#navbar{
+    height:60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding-top: 20px;
+}
+#purchased_vouchers{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    margin-top: 20px;
+}
+img{
+    height: 280px;
+    width: 200px;
+}

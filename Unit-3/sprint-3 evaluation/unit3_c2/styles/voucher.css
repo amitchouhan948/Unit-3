@@ -1,0 +1,27 @@
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+
+
+
+#voucher_list{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+img{
+    height: 280px;
+    width: 200px;
+}
+.voucher{
+    width: 200px;
+    border: 1px solid red;
+    padding-bottom: 10px;
+}
